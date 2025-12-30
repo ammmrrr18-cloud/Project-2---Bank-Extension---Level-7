@@ -1,51 +1,47 @@
-# 🏦 مشروع نظام إدارة البنك - الإصدار المطور (Extension) | Level 7
+# 🏦 Bank Management System - Extended Edition | Level 7
 
-هذا المشروع هو **تطوير وتوسعة (Extension)** للمشروع الأول في المستوى السابع. تم نقل النظام من مجرد سجل لتخزين البيانات إلى نظام بنكي تفاعلي قادر على إدارة العمليات المالية والتحقق من صحتها برمجياً.
-
----
-
-## 🔗 روابط سريعة (Quick Links)
-* **المشروع السابق:** [النسخة الأولى من نظام البنك (V1)](https://github.com/ammmrrr18-cloud/07-Algorithms-Level-3-Bank-Project)
+This project is a **functional extension** of the first Bank Project in Level 7. The system has evolved from a simple data storage tool into an interactive banking application capable of managing financial transactions with built-in logic validation.
 
 ---
 
-## 🔄 ما الجديد في هذا الإصدار؟ (New Enhancements)
-
-لقد قمت بتطوير المشروع ليشمل الميزات الاحترافية التالية:
-
-### 1️⃣ نظام القوائم المتداخلة (Sub-Menus System)
-* **الإضافة:** قمت بإضافة خيار جديد في القائمة الرئيسية وهو **`Transactions`**، والذي يفتح قائمة فرعية (Sub-Menu) كاملة ومنفصلة للعمليات المالية.
-* **الهدف التقني:** إدارة تدفق البرنامج باستخدام `Enums` متعددة وتنظيم التنقل بين القوائم بسلاسة.
-
-
-
-### 2️⃣ العمليات المالية (Transaction Operations)
-* **الإيداع (Deposit):** إضافة ميزة تسمح بزيادة رصيد العميل وتحديث ملف الـ `Clients.text` فوراً.
-* **السحب (Withdraw):** إضافة ميزة سحب الأموال وربطها بمنطق التحقق الفوري.
-
-### 3️⃣ منطق التحقق الذكي (Smart Validation Logic)
-* **منع السحب الزائد:** البرنامج الآن "ذكي" بما يكفي ليرفض أي عملية سحب تتجاوز رصيد العميل الحالي، ويظهر رسالة تحذيرية: `Amount Exceeds the balance`.
-* **الهدف التقني:** تطبيق مفهوم معالجة الأخطاء (Error Handling) لضمان منطقية البيانات المالية.
-
-
-
-### 4️⃣ تقارير السيولة المالية (Total Balances Report)
-* **الإضافة:** شاشة مخصصة تعرض قائمة بجميع العملاء وأرصدتهم فقط، وفي نهايتها يتم حساب **إجمالي أرصدة البنك (Total Balances)**.
-* **الهدف التقني:** التمرير (Iteration) عبر الـ `Vector` لإجراء عمليات حسابية تراكمية وعرض النتائج بشكل منسق.
+## 🔗 Quick Links
+* **Previous Project:** [Bank System (V1)](https://github.com/ammmrrr18-cloud/07-Algorithms-Level-3-Bank-Project)
 
 ---
 
-## 🛠️ الأدوات البرمجية المستخدمة في التطوير
-* **Vectors & Structs:** لإدارة البيانات في الذاكرة بشكل ديناميكي ومرن.
-* **File Handling (fstream):** لضمان حفظ كل عملية مالية بشكل دائم.
-* **Advanced Enums:** للتحكم الاحترافي في القوائم المتعددة وتسهيل صيانة الكود.
-* **iomanip:** لتنسيق المخرجات المالية بشكل جداول احترافية.
+## 🔄 What's New in this Version? (Enhancements)
+
+In this extension, I upgraded the project with professional features:
+
+### 1️⃣ Nested Menus System (Sub-Menus)
+* **Addition:** Introduced a new option in the Main Menu called **`Transactions`**, which opens a completely separate sub-menu for financial operations.
+* **Technical Objective:** Demonstrating control flow management using multiple `Enums` and smooth navigation between different program layers.
+
+### 2️⃣ Financial Transaction Operations
+* **Deposit:** Added a feature to increase a client's balance and instantly sync changes with the `Clients.text` file.
+* **Withdraw:** Integrated a withdrawal feature linked to immediate balance verification.
+
+### 3️⃣ Smart Validation Logic
+* **Overdraft Prevention:** The program is now "intelligent" enough to reject any withdrawal exceeding the client's current balance, displaying the warning: `Amount Exceeds the balance`.
+* **Technical Objective:** Applying **Error Handling** concepts to ensure financial data integrity.
+
+### 4️⃣ Liquidity Reporting (Total Balances)
+* **Addition:** A dedicated screen that displays a summary of all clients and their balances, concluding with the **Total Bank Balances**.
+* **Technical Objective:** Iterating through `Vectors` to perform cumulative calculations and presenting data in a formatted report.
 
 ---
 
-## 📁 محتوى المجلدات في المستودع
-* **My-Solution:** نسختي المطورة التي تحتوي على ميزات العمليات المالية (Transactions).
-* **Instructor-Solution:** حل الدكتور محمد أبو هدهود للمراجعة والمقارنة.
+## 🛠️ Technical Toolkit
+* **Vectors & Structs:** Used for dynamic and flexible data management in memory.
+* **File Handling (fstream):** Ensuring every financial transaction (Deposit/Withdraw) is permanently saved.
+* **Advanced Enums:** For professional menu control and cleaner code maintenance.
+* **iomanip:** To format financial outputs into professional, aligned tables.
 
 ---
-*📌 "البرمجيات القوية ليست التي تخزن البيانات فقط، بل التي تديرها بذكاء وتحميها من الأخطاء."*
+
+## 📁 Repository Structure
+* **My-Solution:** My enhanced implementation featuring Transactions and balance validation.
+* **Instructor-Solution:** The model solution by Dr. Mohammed Abu-Hadhoud for technical reference and comparison.
+
+---
+*📌 "Strong software isn't just about storing data; it's about managing it intelligently and protecting it from errors."*
